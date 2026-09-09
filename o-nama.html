@@ -1,4 +1,108 @@
-<!doctype html><html lang="sr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="O stomatološkoj ordinaciji [Naziv ordinacije]."><title>O nama — [Naziv ordinacije]</title><link rel="stylesheet" href="styles.css"></head><body>
-<header class="nav"><div class=" nav-inner"><a class="brand" href="index.html">[Naziv <span>ordinacije</span>]</a><button class="menu" aria-label="Meni">☰</button><nav class="links"><a href="index.html">Početna</a><a href="usluge.html">Usluge</a><a href="prva-poseta.html">Prva poseta</a><a class="active" href="o-nama.html">O nama</a><a href="kontakt.html">Kontakt</a></nav></div></header>
-<main><section class=" page-head reveal"><div class="eyebrow">Ljudi iza ordinacije</div><h1>Stručnost može da bude <em>topla.</em></h1><p class="lead">Ova stranica je predviđena za stvarne informacije o timu, pristupu i prostoru ordinacije — bez izmišljenih biografija i obećanja.</p></section><section class="section soft"><div class=" split"><div class="reveal"><div class="eyebrow">[Dr. Ime Prezime]</div><h2>Vaš stomatolog, sa kojim možete normalno da razgovarate.</h2><p>[Ovde ide stvarna biografija doktora, stručna oblast, edukacija i pristup radu.]</p><div class="actions"><a class="button" href="kontakt.html">Zakažite razgovor</a></div></div><div class="card reveal" style="min-height:380px;display:grid;place-items:center;text-align:center"><div><div class="eyebrow">Fotografija doktora</div><strong style="font-family:Manrope;font-size:1.3rem">[Fotografija doktora]</strong><p>Ovde ide stvarna fotografija tima.</p></div></div></div></section><section class=" section"><div class="section-head reveal"><h2>Mesto u koje je<br>prijatno doći.</h2><p>Prostor ordinacije može biti predstavljen fotografijama stvarnog enterijera, bez generičkog medicinskog stock izgleda.</p></div><div class="card reveal" style="min-height:330px;display:grid;place-items:center;text-align:center"><div><div class="eyebrow">Fotografija prostora</div><strong style="font-family:Manrope;font-size:1.3rem">[Fotografija ordinacije]</strong><p>[Fotografija čekaonice] · [Fotografija detalja prostora]</p></div></div></section></main>
-<footer class="footer"><div class=" footer-inner"><div><strong>[Naziv ordinacije]</strong><br>Ulica, broj, grad</div><div>[Telefon] · [Email]<br>© <span data-year></span> [Naziv ordinacije]</div></div></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O nama — [Naziv ordinacije]</title>
+<meta name="description" content="Upoznajte tim ordinacije [Naziv ordinacije]. Stručnost koja ne mora da bude hladna.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">[Naziv ordinacije]</a>
+    <nav class="main-nav" aria-label="Glavna navigacija">
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="usluge.html">Usluge</a></li>
+        <li><a href="prva-poseta.html">Prva poseta</a></li>
+        <li><a href="o-nama.html" aria-current="page">O nama</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a href="kontakt.html" class="btn btn-primary nav-cta desktop-only">Zakažite pregled</a>
+    </nav>
+    <button class="hamburger" aria-label="Otvori meni" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobilna navigacija">
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="usluge.html">Usluge</a></li>
+      <li><a href="prva-poseta.html">Prva poseta</a></li>
+      <li><a href="o-nama.html">O nama</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="btn btn-primary">Zakažite pregled</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container reveal">
+      <p class="eyebrow">O nama</p>
+      <h1>Stručnost ne mora<br>da bude hladna.</h1>
+      <p class="body">Neki ljudi dolaze redovno. Neki tek kada više ne mogu da ignorišu problem. Obe grupe su dobrodošle.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="about-photo reveal">[Fotografija ordinacije]</div>
+
+      <div class="doctor-block reveal">
+        <div class="doctor-photo">[Fotografija doktora]</div>
+        <div>
+          <p class="doctor-name">[Dr. Ime Prezime]</p>
+          <p class="doctor-role">[Specijalizacija]</p>
+          <p class="doctor-bio">Ovde ide stvarna biografija, kvalifikacije i iskustvo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <div class="container reveal">
+      <h2>Spremni da se upoznamo?</h2>
+      <div class="cta-actions">
+        <a href="kontakt.html" class="btn btn-primary">Zakažite pregled →</a>
+        <a href="kontakt.html" class="link-underline">Imate pitanje? Javite nam se.</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p class="footer-brand">[Naziv ordinacije]</p>
+      <p class="footer-address">Ulica, broj, grad<br>[Telefon]<br>[Email]</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigacija</h4>
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="usluge.html">Usluge</a></li>
+        <li><a href="prva-poseta.html">Prva poseta</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>&nbsp;</h4>
+      <ul>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    © 2026 [Naziv ordinacije]
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

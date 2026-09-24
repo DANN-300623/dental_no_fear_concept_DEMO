@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kontakt — OSMEH</title>
-<meta name="description" content="Zakažite pregled ili nam pošaljite pitanje. Ordinacija OSMEH, Ovde ide vaša adresa.">
+<meta name="description" content="Kontaktirajte nas ili nam pošaljite pitanje. Ordinacija OSMEH, Ovde ide vaša adresa.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -908,7 +908,7 @@ body.nav-open { overflow: hidden; }
         <li><a href="o-nama.html">O nama</a></li>
         <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
       </ul>
-      <a href="kontakt.html" class="btn btn-primary nav-cta desktop-only">Zakažite pregled</a>
+      <a href="kontakt.html" class="btn btn-primary nav-cta desktop-only">Kontaktirajte nas</a>
     </nav>
     <button class="hamburger" aria-label="Otvori meni" aria-expanded="false" aria-controls="mobile-nav">
       <span></span><span></span><span></span>
@@ -922,7 +922,7 @@ body.nav-open { overflow: hidden; }
       <li><a href="o-nama.html">O nama</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
-    <a href="kontakt.html" class="btn btn-primary">Zakažite pregled</a>
+    <a href="kontakt.html" class="btn btn-primary">Kontaktirajte nas</a>
   </nav>
 </header>
 
@@ -932,6 +932,7 @@ body.nav-open { overflow: hidden; }
       <p class="eyebrow">Kontakt</p>
       <h1>Hajde da počnemo<br>razgovor.</h1>
       <p class="body">Ako niste sigurni šta vam je potrebno — možete jednostavno da pitate.</p>
+      <div style="margin-top:20px;padding:14px 18px;background:var(--accent-soft, #f5ece6);border-left:2px solid var(--accent, #c1361e);border-radius:6px;font-size:13px;line-height:1.6;color:var(--gray, #555);">Ovo je demo prikaz — test verzija kontakt forme. Poruka se ne prosleđuje pravoj ordinaciji, pa nije potrebno da unosite tačan broj telefona. U polje za ime i email upišite svoje prave podatke — na taj email ćemo Vam odgovoriti, da vidite kako sistem radi.</div>
     </div>
   </section>
 
@@ -945,8 +946,8 @@ body.nav-open { overflow: hidden; }
               <input type="text" id="name" name="name" autocomplete="name" required>
             </div>
             <div class="field">
-              <label for="phone">Telefon</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+              <label for="phone">Telefon <span style="opacity:.6;font-weight:400;">(opciono)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
             </div>
             <div class="field">
               <label for="email">Email</label>
@@ -957,7 +958,7 @@ body.nav-open { overflow: hidden; }
               <textarea id="message" name="message" placeholder="Nisam siguran/na šta mi treba, ali..." required></textarea>
             </div>
             <label style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--gray);margin-bottom:18px;">
-              <input type="checkbox" id="privacyConsent" required style="margin-top:3px;flex-shrink:0;">
+              <input type="checkbox" id="privacyConsent" required style="margin-top:3px;flex-shrink:0;width:auto;padding:0;border:none;">
               <span>Slažem se sa <a href="demo-privatnost.html" target="_blank">Politikom privatnosti</a> — email/podaci se koriste isključivo za odgovor na ovaj zahtev, ni u koje druge svrhe.</span>
             </label>
             <button type="submit" class="btn btn-primary">Pošalji upit →</button>
@@ -1054,7 +1055,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* Kontakt forma — povezana sa Apps Script */
-  var OSMEH_SCRIPT_URL = 'PASTE_TVOJ_APPS_SCRIPT_WEB_APP_URL_OVDE';
+  var OSMEH_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxDF4R9fwQQEo6592OHgPukqYAn50HsvP5iK533qJmnvmF6ZdIYdPLzPefqMYjspDj2mQ/exec';
   var form = document.getElementById('contact-form');
 
   if (form) {
